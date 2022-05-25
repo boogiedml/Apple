@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container{
+    margin: 0 12vw;
+    position: relative;
+}
+
+p{
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+button{
+    background-color: #F24C4C;
+    color: #FFF;
+    padding: 4% 8%;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+button:hover{
+    background-color: #FF4949;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    position: relative;
+    align-items: center;
+}
+.nav-brand{
+    color: #000;
+}
+.nav-toggle{
+    display: none;
+}
+.nav-btn{
+    color: #73777B;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+}
+.navbar li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.navbar li a{
+    text-decoration: none;
+    color: #73777B;
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar input{
+    width: 170px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #73777B;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 0;
+}
+input:focus{
+    outline: none;
+}
+
+/* First Section  */
+.firstSection{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.firstSection aside{
+    max-width: 400px;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 12vw;
+}
+.firstSection aside h1{
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+aside p{
+    padding-left: 7%;
+    margin-bottom: 40px;
+    position: relative;
+    color: #73777B;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.firstSection aside p::before{
+    content: " ";
+    display: block;
+    width: 2px;
+    height: 105px;
+    background-color: #73777B;
+    position: absolute;
+    left: 0;
+}
+.watchContainer{
+    position: relative;
+    height: fit-content;
+}
+.firstSection img{
+    position: relative;
+    width: 400px;
+    
+}
+
+/* Second Section  */
+.secondSection{
+    width: 100%;
+    background-color: #FFF;
+    z-index: 20;
+    position: relative;
+    top: -10px;
+    border-top: 1px solid #73777B;
+    padding: 5% 0;
+}
+
+.secondOne{
+    display: flex;
+    justify-content: space-between;
+}
+.secondOne .tTN{
+    width: 30%;
+}
+.secondOne h3{
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+}
+.secondOne p{
+    margin-bottom: 20px;
+}
+
+.secondOne a{
+    text-decoration: none;
+    color: #F24C4C;
+    margin-left: 70px;
+}
+
+.learnMore{
+    position: relative;
+}
+.secondOne a::before{
+    content: "";
+    width: 50px;
+    height: 2px;
+    background-color: #F24C4C;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+}
+.learnMore:hover a::before{
+    width: 70px;
+}
+.learnMore:hover a{
+    margin-left: 90px;
+}
+
+.ellipsis{
+    color: #73777B;
+}
+.secondTwo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+}
+.secondTwo .text{
+    width: 400px;
+    position: relative;
+    margin-top: 50px;
+}
+.secondTwo img{
+    width: 300px;
+}
+.secondTwo aside h2{
+    font-size: 2rem;
+    line-height: 1.5;
+}
+.secondTwo p{
+    margin-top: 20px;
+    color: #73777B;
+}
+.secondTwo aside p::before{
+    content: " ";
+    display: block;
+    width: 2px;
+    height: 105px;
+    background-color: #73777B;
+    position: absolute;
+    left: 0;
+}
+
+/* Third Section  */
+.thirdSection{
+    background-image: url(images/runners.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    height: 90vh;
+    width: 100%;
+    z-index: 20;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.thirdSection aside{
+    width: 400px;
+}
+.thirdSection p{
+    color: #FFF;
+    margin-top: 50px;
+}
+.thirdSection aside p::before{
+    content: " ";
+    display: block;
+    width: 2px;
+    height: 105px;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+}
+
+/* Media Queries */
+
+@media( max-width: 795px ){
+
+    /* Navbar  */
+    .navbar{
+        margin: 0;
+    }
+    .nav-brand{
+        margin-left: 12vw;
+    }
+    .nav-toggle{
+        display: block;
+        right: 0;
+        cursor: pointer;
+        margin-right: 12vw;
+    }
+    .navbar ul{
+        padding: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #73777B;
+        top: 100px;
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        transition: .5s;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 20;
+    }
+    .nav-links.show{
+        opacity: 1;
+        pointer-events: all;
+    }
+    .navbar li a,
+    .navbar li input{
+        text-decoration: none;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+        padding: 15px 0;
+    }
+    .navbar input{
+        border-bottom: 2px solid #FFF;
+        color: #FFF;
+        background-color: #73777B;
+
+    }
+    input::placeholder{
+        color: #FFF;
+    }
+    /* First Section  */
+    .firstSection{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .firstSection aside{
+        max-width: 80%;
+        margin: 100px auto 50px;
+    }
+    aside p{
+        padding-left: 0;
+    }
+    .firstSection aside p::before{
+        display: none;
+    }
+    .watchContainer{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    .firstSection img{
+        position: relative;
+        width: 80%;   
+    }
+
+
+    /* Second Section  */
+    .secondOne{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .secondOne .tTN{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .secondOne p{
+        margin-bottom: 10px;
+    }
+    .secondOne a{
+        text-decoration: none;
+        color: #F24C4C;
+        margin-left: 50px;
+        font-size: 14px;
+    }
+    .secondOne a::before{
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: #F24C4C;
+        position: absolute;
+        bottom: 8px;
+        left: 0;
+    }
+    .learnMore:hover a::before{
+        width: 50px;
+    }
+    .learnMore:hover a{
+        margin-left: 70px;
+    }
+
+    .secondTwo{
+        flex-direction: column;
+        background-image: url(images/applehand.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+    }
+    .secondTwo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        position: relative;
+        color: #FFF;
+    }
+    .secondTwo .text{
+        width: 80%;
+        position: relative;
+        margin: 50px auto;
+    }
+    .secondTwo img{
+        display: none;
+    }
+    .secondTwo p{
+        color: #FFF;
+    }
+    .secondTwo aside p::before{
+        display: none;
+    }
+
+    /* Third Section  */
+    .thirdSection{
+        width: 100%;
+    }
+    .thirdSection aside{
+        width: 100%;
+    }
+    .thirdSection aside p::before{
+        display: none;
+    }
+}
